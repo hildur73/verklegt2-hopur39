@@ -73,3 +73,11 @@ h1{
     bottom: 0;
     padding: 10px;
 }
+@media screen and (max-width: 800px){
+    .email{
+        display: none;
+    }
+    .phone_number{
+        display: none;
+    }
+}
