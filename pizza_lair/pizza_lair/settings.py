@@ -88,7 +88,7 @@ DATABASES = {
         'USER': 'pizza-lair-db-user',
         'PASSWORD': 'HHH.123',
         'HOST': '35.228.253.190',
-        'PORT': ''
+        'PORT': '5432'
     }
 }
 
