@@ -7,7 +7,7 @@ class Menu(models.Model):
     price = models.FloatField()
     image = models.CharField(max_length=9999)
 
+
 class Menudetails(models.Model):
     description = models.CharField(max_length=255, blank=True)
     menuid = models.ForeignKey(Menu, on_delete=models.CASCADE)
-
