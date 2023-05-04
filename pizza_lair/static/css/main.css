@@ -15,29 +15,24 @@ h1{
     background-color: green;
     position: absolute;
     top: 200px;
-
-
 }
 
 .offers{
     background-color: lightblue;
     position: absolute;
     top: 200px;
-
 }
 
 .cart{
     background-color: lightpink;
     position: absolute;
     top: 200px;
-
 }
 
 .personal_profile{
     background-color: mediumpurple;
     position: absolute;
     top: 200px;
-
 }
 
 .nav-cart{
@@ -53,25 +48,37 @@ h1{
 }
 
 .footer{
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
-    padding: 10px;
+    padding: 30px;
     width: 100%;
     background-color: #D62A0F;
     color: white;
     text-align: center;
+    height: 100px;
+    margin-top: -200px;
 }
+
 .phone_number{
-    position: relative;
-    left: 300px;
+    position: absolute;
+    right: 80px;
     bottom: 0;
     padding: 10px;
 }
 
 .email{
-    position: relative;
-    right: 300px;
+    position: absolute;
+    text-align: left;
     bottom: 0;
     padding: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .email{
+        display: none;
+    }
+    .phone_number{
+        display: none;
+    }
 }
