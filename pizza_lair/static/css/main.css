@@ -11,9 +11,8 @@ h1{
     position: absolute;
     top: 150px;
 }
-.menu {
-    background-color: green;
-    position: absolute;
+.red {
+    position: relative;
     top: 200px;
 }
 
@@ -81,4 +80,8 @@ h1{
     .phone_number{
         display: none;
     }
+}
+
+.menu{
+    top: 400px;
 }

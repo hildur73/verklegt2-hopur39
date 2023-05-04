@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <h1 class="red">Menu</h1>
     <div class="menu">
-        <h2> Welcome to the menu bitch</h2>
+        {% for pizza in menu %}
+            {% include 'menu/single_pizza.html' with pizza=pizza %}
+        {% endfor %}
     </div>
 {% endblock %}
