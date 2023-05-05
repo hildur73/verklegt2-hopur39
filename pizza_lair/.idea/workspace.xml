@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a7bde0-8726-40ca-a2cc-bc9ccf8e5524" name="Changes" comment="" />
+    <list default="true" id="d7a7bde0-8726-40ca-a2cc-bc9ccf8e5524" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu/menu_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/offers/single_offer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pizza_lair.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pizza_lair.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/offers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/single_pizza.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/single_pizza.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/offers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/offers/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -20,14 +43,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/helgalindpetursdottir/Documents/GitHub/verklegt2-hopur39/pizza_lair",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.base.html">
+    <configuration name="base.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pizza_lair/pizza_lair/templates/base.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pizza_lair" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -50,6 +78,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.base.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
