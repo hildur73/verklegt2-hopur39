@@ -1,42 +1,20 @@
 .container-fluid{
     background-color: #D62A0F;
-    padding: 20px;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
 }
 
-h1{
-    position: absolute;
-    top: 150px;
-}
-.red {
-    position: relative;
-    top: 200px;
-}
-
-.offers{
-    background-color: lightblue;
-    position: absolute;
-    top: 200px;
-}
-
-.cart{
-    background-color: lightpink;
-    position: absolute;
-    top: 200px;
+.container{
+    padding-bottom: 130px;
+    padding-top: 15px;
 }
 
 .personal_profile{
     background-color: mediumpurple;
-    position: absolute;
-    top: 200px;
 }
 
 .nav-cart{
-    position:absolute;
-    right: 80px;
     font-size: 150%;
 }
 
@@ -47,41 +25,57 @@ h1{
 }
 
 .footer{
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
-    padding: 30px;
+    padding-top: 15px;
     width: 100%;
     background-color: #D62A0F;
     color: white;
     text-align: center;
-    height: 100px;
-    margin-top: -200px;
-}
-
-.phone_number{
-    position: absolute;
-    right: 80px;
-    bottom: 0;
-    padding: 10px;
-}
-
-.email{
-    position: absolute;
-    text-align: left;
-    bottom: 0;
-    padding: 10px;
+    height: 115px;
 }
 
 @media screen and (max-width: 800px){
-    .email{
-        display: none;
-    }
     .phone_number{
         display: none;
     }
 }
 
+.pizza-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+ .single_pizza{
+     float: left;
+     width: 50%;
+    vertical-align: middle;
+ }
+
+.pizza-img-description{
+    float: left;
+    height: auto;
+
+}
+
+.description{
+    font-size: 150%;
+    padding: 30px;
+    text-align: center;
+}
+
+.priced{
+    font-size: 130%;
+    text-align: center;
+}
+
 .menu{
-    top: 400px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
 }
