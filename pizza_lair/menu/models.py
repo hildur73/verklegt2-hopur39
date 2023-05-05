@@ -11,7 +11,6 @@ class Menu(models.Model):
         return self.name
 
 
-
 class Menudetails(models.Model):
     description = models.CharField(max_length=255, blank=True)
     menuid = models.ForeignKey(Menu, on_delete=models.CASCADE)

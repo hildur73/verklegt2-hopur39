@@ -1,4 +1,9 @@
-<div class="well pizza">
-    <img class="pizza-img" src="{{ pizza.menu_set.first.image }}"/>
-    <h4>{{pizza.name}}</h4>
+<div class="single_pizza">
+    <a href="/menu/{{pizza.id}}">
+        <img class="pizza-img"  src="{{ pizza.image }}"/>
+        <h4>{{pizza.name}}</h4>
+    </a>
+    <p>{{pizza.price}} kr</p>
 </div>
+
+<!--menu_set.first.image-->
