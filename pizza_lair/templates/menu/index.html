@@ -2,6 +2,12 @@
 
 {% block content %}
     <h2 class="red">Menu Overview</h2>
+    <div class="input-group">
+        <input type="search" class="form-control" id="search-box" placeholder="Enter your search here"/>
+        <div class="input-group-btn"> <button type="button" id="search-btn" class="btn btn-default">Search</button>
+        </div>
+    </div>
+
     <div class="menu">
 
         {% for pizza in menu %}
