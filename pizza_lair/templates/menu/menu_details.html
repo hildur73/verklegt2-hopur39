@@ -4,4 +4,9 @@
     <img class="pizza-img-description" src="{{ menu.image }}"/>
   <p class="description">{{menudetails.description}}</p>
   <p class="priced"> {{menu.price}} kr</p>
+
+  <a href="/delete_menu/{{menu.id}}" class="block btn btn-primary">Delete pizza</a>
+  <a href="/update_menu/{{menu.id}}" class="block btn btn-primary">Update pizza</a>
+  <a class="block btn btn-primary">Add Pizza to cart</a>
+
 {% endblock %}
