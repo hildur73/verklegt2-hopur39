@@ -62,5 +62,5 @@ def update_menu(request, id):
         form = MenuUpdateForm(instance=instance)
     return render(request, 'menu/update_menu.html', {
         'form': form,
-        'id': id,
+        'id': id
     })

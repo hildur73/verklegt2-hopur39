@@ -7,7 +7,11 @@ $(document).ready(function() {
             type: 'GET',
             success: function(resp) {
                 var newHtml = resp.data.map(d => {
-                    return '<div class="single_pizza"> <a href="/menu/${d.id}"><h4>${d.name}</h4> </a> </div>'
+                    return `<div class="single_pizza">
+                          <a href="/menu/${d.id}">
+                            <h4>${d.name}</h4>
+                          </a>
+                        </div>`
                 });
                 $('.menu').html(newHtml.join(''));
                 $('#search-box').val('');
