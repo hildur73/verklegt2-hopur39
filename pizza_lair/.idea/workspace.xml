@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7a7bde0-8726-40ca-a2cc-bc9ccf8e5524" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/menu/forms/menu_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offers/forms/offers_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu/create_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu/update_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/offers/create_offers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/offers/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/offers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/menu_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu_details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -27,19 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/helgalindpetursdottir/Documents/GitHub/verklegt2-hopur39/pizza_lair&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/helgalindpetursdottir/Documents/GitHub/verklegt2-hopur39/pizza_lair",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JavaScript Debug.base.html">
+}]]></component>
+  <component name="RunManager" selected="JavaScript Debug.create_menu.html">
     <configuration name="base.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pizza_lair/pizza_lair/templates/base.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="create_menu.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pizza_lair/pizza_lair/templates/menu/create_menu.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -66,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.create_menu.html" />
         <item itemvalue="JavaScript Debug.base.html" />
       </list>
     </recent_temporary>
