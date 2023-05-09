@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
 from offers.forms.offers_form import OffersCreateForm, OffersUpdateForm
@@ -10,7 +11,7 @@ def index(request):
     context['offers'] = Offers.objects.all()
     return render(request, 'offers/index.html', context)
 
-
+@login_required
 def create_offers(request):
     if request.method == 'POST':
         form = OffersCreateForm(data=request.POST)
@@ -23,6 +24,7 @@ def create_offers(request):
         'form':form
     })
 
+@login_required
 def get_offer_by_id(request, id):
     bla = Offers.objects.filter(id=id).first()
     #menudetail = Menudetails.objects.filter(menuid_id=bla.id).first()
@@ -32,13 +34,13 @@ def get_offer_by_id(request, id):
     })
 
 
-#@login_required
+@login_required
 def delete_offers(request, id):
     offers = get_object_or_404(Offers, pk=id)
     offers.delete()
     return redirect('offers-index')
 
-#@login_required
+@login_required
 def update_offers(request, id):
     instance = get_object_or_404(Offers, pk=id)
     if request.method == 'POST':
