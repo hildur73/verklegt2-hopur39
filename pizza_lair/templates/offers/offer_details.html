@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
+  <! -- When the offer on the offerlist is clicked on, these informations appear-->
   <p class="description">{{offers.description}}</p>
   <p class="priced"> {{offers.price}} kr</p>
 
+  <! -- buttons to update or delete each offer from the offerlist, when updating can change each info about offer
+            (not required can change only one certain info)-->
   <a href="/offers/delete_offers/{{offers.id}}" class="block btn btn-primary">Delete offer</a>
   <a href="/offers/update_offers/{{offers.id}}" class="block btn btn-primary">Update offer</a>
 

@@ -1,5 +1,5 @@
 {% load static %}
-
+<! -- this file is for the navigation bar, code taken from bootstrap -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/"><img src="{% static 'images/logo.jpeg' %}" alt="Logo" width="150" height="50"></a>
@@ -12,15 +12,18 @@
         <li class="nav-offers"><a class="nav-link" href="/offers/">Offers</a></li>
         <li class="nav-cart"><a class="nav-link" href="/cart/">Cart</a></li>
         {% if user.is_authenticated %}
+        <! -- if user exists then navebar changes into profile and login -->
           <li><a href="user/profile">Profile</a></li>
           <li><a href="user/logout">Logout</a></li>
         {% else %}
+          <! -- else if user logsout or dosn't exist than navbar is login and register -->
           <li><a href="user/login">Login</a></li>
           <li><a href="user/register">Register</a></li>
 
         {% endif %}
       </ul>
         {% if user.is_authenticated %}
+          <! -- if user exist his profile picture will appear in the navbar-->
           <img src="{{user.profile.profile_image}}" class="profile-img-" />
         {% endif %}
     </div>

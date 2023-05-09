@@ -3,6 +3,7 @@
 {% block content %}
     <h2>Available offers</h2>
     <div class="offers">
+        <! -- iterating through the offers to get all the offers to appear on offer site -->
         {% for offer in offers %}
             {% include 'offers/single_offer.html' with offer=offer %}
         {% endfor %}
