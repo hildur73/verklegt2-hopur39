@@ -10,12 +10,12 @@
     padding-top: 15px;
 }
 
-.nav-cart{
+.form form-horizontal{
     font-size: 150%;
     text-align: right;
 }
 
-.nav-menu, .nav-offers, .nav-profile{
+.nav-menu, .nav-offers, .nav-cart {
     font-size: 150%;
     width: 110px;
     margin-left: 1em;
@@ -89,4 +89,9 @@
     height: 75px;
     border-radius: 50%;
     border: 2px solid black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }

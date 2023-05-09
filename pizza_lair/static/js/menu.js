@@ -11,7 +11,7 @@ $(document).ready(function() {
                           <a href="/menu/${d.id}">
                             <img class="pizza-img" src="${d.image}" />
                             <h4>${d.name}</h4>
-                          </a>
+                           </a>
                         </div>`
                 });
                 $('.menu').html(newHtml.join(''));

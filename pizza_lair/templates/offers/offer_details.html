@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <p class="description">{{offers.description}}</p>
+  <p class="priced"> {{offers.price}} kr</p>
+
+  <a href="/offers/delete_offers/{{offers.id}}" class="block btn btn-primary">Delete offer</a>
+  <a href="/offers/update_offers/{{offers.id}}" class="block btn btn-primary">Update offer</a>
+
+{% endblock %}
