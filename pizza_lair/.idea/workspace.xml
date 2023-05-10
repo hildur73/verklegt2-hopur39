@@ -6,17 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7a7bde0-8726-40ca-a2cc-bc9ccf8e5524" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/create_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/create_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/menu_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu/single_pizza.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/single_pizza.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/offers/create_offers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/offers/create_offers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/offers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/offers/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/offers/offer_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/offers/offer_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/offers/single_offer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/offers/single_offer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
