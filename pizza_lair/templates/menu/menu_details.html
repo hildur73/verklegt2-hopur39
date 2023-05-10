@@ -10,6 +10,9 @@
   <a href="/delete_menu/{{menu.id}}" class="block btn btn-primary">Delete pizza</a>
   <a href="/update_menu/{{menu.id}}" class="block btn btn-primary">Update pizza</a>
   <! -- button to add pizza to the cart -->
-  <a class="block btn btn-primary">Add Pizza to cart</a>
+  <a class="block btn btn-primary-cart" value="{{menu.id}}" href="{% url 'add_to_cart' menu.id %}">Add Pizza to cart</a>
 
 {% endblock %}
+
+
+<!--href ="/cart"-->
