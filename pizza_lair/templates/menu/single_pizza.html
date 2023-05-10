@@ -1,9 +1,9 @@
+<! -- the file that the for loop in index.html is iterating through -->
 <div class="single_pizza">
     <a href="/menu/{{pizza.id}}">
+        <! -- it is possible to click on both, the pizza and the name to go onto menu detail page -->
         <img class="pizza-img"  src="{{ pizza.image }}"/>
         <h4>{{pizza.name}}</h4>
     </a>
     <p>{{pizza.price}} kr</p>
 </div>
-
-<!--menu_set.first.image-->

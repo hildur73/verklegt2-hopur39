@@ -4,7 +4,8 @@ from django import forms
 
 
 class MenuUpdateForm(ModelForm):
-    class Meta():
+    description = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    class Meta:
         model = Menu
         exclude = ['id']
         widgets = {
@@ -15,13 +16,14 @@ class MenuUpdateForm(ModelForm):
 
 
 class MenuCreateForm(ModelForm):
-    class Meta():
-        description = forms.CharField(required=True, widget=forms.TextInput(attrs={'class':'form-control'}))
+    description = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    class Meta:
+
         model = Menu
         exclude = ['id']
         widgets = {
             'name': widgets.TextInput(attrs={'class':'form-control'}),
             'price': widgets.NumberInput(attrs={'class':'form-control'}),
-            'image': widgets.TextInput(attrs={'class':'form-control'})
+            'image': widgets.TextInput(attrs={'class':'form-control'}),
         }
 

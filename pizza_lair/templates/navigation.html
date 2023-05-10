@@ -1,5 +1,5 @@
 {% load static %}
-
+<! -- this file is for the navigation bar, code taken from bootstrap -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/"><img src="{% static 'images/logo.jpeg' %}" alt="Logo" width="150" height="50"></a>
@@ -9,19 +9,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-menu"><a class="nav-link" href="/menu/">Menu</a></li>
-        <li class="nav-profile"><a class="nav-link" href="/personal_profile/">Profile</a></li>
         <li class="nav-offers"><a class="nav-link" href="/offers/">Offers</a></li>
         <li class="nav-cart"><a class="nav-link" href="/cart/">Cart</a></li>
         {% if user.is_authenticated %}
-          <li><a href="user/profile">Profile</a></li>
-          <li><a href="user/logout">Logout</a></li>
+        <! -- if user exists then navebar changes into profile and login -->
+          <li><a class="profile-line" href="{% url 'profile' %}">Profile</a></li>
+          <li><a class="profile-line" href="{% url 'logout' %}">Logout</a></li>
         {% else %}
-          <li><a href="user/login">Login</a></li>
-          <li><a href="user/register">Register</a></li>
+          <! -- else if user logsout or dosn't exist than navbar is login and register -->
+          <li><a href="{% url 'login' %}">Login</a></li>
+          <li><a href="{% url 'register' %}">Register</a></li>
 
         {% endif %}
       </ul>
         {% if user.is_authenticated %}
+          <! -- if user exist his profile picture will appear in the navbar-->
           <img src="{{user.profile.profile_image}}" class="profile-img-" />
         {% endif %}
     </div>
