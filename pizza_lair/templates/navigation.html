@@ -12,9 +12,18 @@
         <li class="nav-profile"><a class="nav-link" href="/personal_profile/">Profile</a></li>
         <li class="nav-offers"><a class="nav-link" href="/offers/">Offers</a></li>
         <li class="nav-cart"><a class="nav-link" href="/cart/">Cart</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="user/profile">Profile</a></li>
+          <li><a href="user/logout">Logout</a></li>
+        {% else %}
+          <li><a href="user/login">Login</a></li>
+          <li><a href="user/register">Register</a></li>
+
+        {% endif %}
       </ul>
+        {% if user.is_authenticated %}
+          <img src="{{user.profile.profile_image}}" class="profile-img-" />
+        {% endif %}
     </div>
   </div>
-
-
 </nav>

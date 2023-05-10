@@ -10,10 +10,6 @@
     padding-top: 15px;
 }
 
-.personal_profile{
-    background-color: mediumpurple;
-}
-
 .nav-cart{
     font-size: 150%;
     text-align: right;
@@ -86,4 +82,11 @@
     width: 300px;
     margin: 10px;
     float: right;
+}
+
+.profile-img-{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid black;
 }

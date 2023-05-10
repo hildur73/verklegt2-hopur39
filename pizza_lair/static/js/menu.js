@@ -9,6 +9,7 @@ $(document).ready(function() {
                 var newHtml = resp.data.map(d => {
                     return `<div class="single_pizza">
                           <a href="/menu/${d.id}">
+                            <img class="pizza-img" src="${d.image}" />
                             <h4>${d.name}</h4>
                           </a>
                         </div>`
