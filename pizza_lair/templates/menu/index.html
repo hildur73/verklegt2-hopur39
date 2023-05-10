@@ -2,6 +2,7 @@
 
 {% block content %}
     <h2 class="red">Menu Overview</h2>
+    <! -- to make the search bar -->
     <div class="input-group">
         <input type="search" class="form-control" id="search-box" placeholder="Enter your search here"/>
         <div class="input-group-btn"> <button type="button" id="search-btn" class="btn btn-default">Search</button>
@@ -9,7 +10,7 @@
     </div>
 
     <div class="menu">
-
+        <! -- iterating through the menu to get all the pizzas to appear on menu site -->
         {% for pizza in menu %}
             {% include 'menu/single_pizza.html' with pizza=pizza %}
         {% endfor %}

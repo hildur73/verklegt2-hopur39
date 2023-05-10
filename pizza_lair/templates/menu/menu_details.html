@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
+  <! -- When the pizza on the menu is clicked on, these informations appear-->
   <h1 class="pizzanamed"> {{menu.name}}</h1>
     <img class="pizza-img-description" src="{{ menu.image }}"/>
   <p class="description">{{menudetails.description}}</p>
   <p class="priced"> {{menu.price}} kr</p>
-
+  <! -- buttons to update or delete each pizza from the menu, when updateing can change each info about pizza
+            (not required can change only one certain info)-->
   <a href="/delete_menu/{{menu.id}}" class="block btn btn-primary">Delete pizza</a>
   <a href="/update_menu/{{menu.id}}" class="block btn btn-primary">Update pizza</a>
-  <a class="block btn btn-primary">Add Pizza to cart</a>
+  <! -- button to add pizza to the cart -->
+  <a class="block btn btn-primary-cart" value="{{menu.id}}" href="{% url 'add_to_cart' menu.id %}">Add Pizza to cart</a>
 
 {% endblock %}
+
+
+<!--href ="/cart"-->

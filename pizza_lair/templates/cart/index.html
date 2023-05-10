@@ -1,7 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="cart">
-        <h2> do you really need that much food puda?</h2>
+
+    <div class="container">
+        {% for product in menu %}
+            <div class="thumbnail">
+                <img src="{{ menu.image}}" alt="">
+            </div>
+            <div class="action">
+                <p>{{menu.name}}</p>
+                <p>{{menu.price}}</p>
+
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
