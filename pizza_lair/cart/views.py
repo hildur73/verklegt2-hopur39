@@ -9,7 +9,10 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(request):
-    return render(request, 'cart/index.html')
+    cart = Cart.objects.filter(user_id=request.user)
+    CartItem.objects.filter(cartid=cart.id).first()
+    context = {'cart': cart}
+    return render(request, 'cart/index.html',context)
 
 @login_required
 def add_to_cart(request,item_id):
@@ -27,6 +30,7 @@ def add_to_cart(request,item_id):
     new_item.cartid = the_cart
     menu_item = Menu.objects.filter(id=item_id).first()
     new_item.menuid = menu_item
+    new_item.save()
     menu_item.save()
     return render(request, 'cart/index.html')
 
