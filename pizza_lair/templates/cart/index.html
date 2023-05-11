@@ -4,10 +4,4 @@
 
     <a href="/cart/checkout" class="block btn btn-primary">Checkout</a>
 
-    <div class="carts">
-
-        {% for cart in carts %}
-            {% include 'carts/single_cart.html' with cart=cart %}
-        {% endfor %}
-    </div>
 {% endblock %}
