@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<! -- to add offers to the offers list-->
   <form class="form form-horizontal" action="/offers/create_offers" method="post">
       {% csrf_token %}
       {{form}}

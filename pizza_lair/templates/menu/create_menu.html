@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<! -- To add pizzas to the menu -->
   <form class="form form-horizontal" action="/create_menu" method="post">
       {% csrf_token %}
       {{form}}
