@@ -36,7 +36,6 @@ def create_menu(request):
         form = MenuCreateForm(data=request.POST)
         if form.is_valid():
             menu = form.save()
-            print()
             menu_description = Menudetails()
             menu_description.description = request.POST['description']
             menu_description.menuid = menu
