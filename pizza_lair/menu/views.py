@@ -36,8 +36,11 @@ def create_menu(request):
         form = MenuCreateForm(data=request.POST)
         if form.is_valid():
             menu = form.save()
-            #menu_description = Menudetails(description=request.POST['description'], menu=menu)
-            #menu_description.save()
+            print()
+            menu_description = Menudetails()
+            menu_description.description = request.POST['description']
+            menu_description.menuid = menu
+            menu_description.save()
             return redirect('menu-index')
     else:
         form = MenuCreateForm()
@@ -57,7 +60,11 @@ def update_menu(request, id):
     if request.method == 'POST':
         form = MenuUpdateForm(data=request.POST, instance=instance)
         if form.is_valid():
-            form.save()
+            menu = form.save()
+            menu_description = Menudetails()
+            menu_description.description = request.POST['description']
+            menu_description.menuid = menu
+            menu_description.save()
             return redirect('menu_details', id=id)
     else:
         form = MenuUpdateForm(instance=instance)
