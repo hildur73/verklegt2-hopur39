@@ -30,8 +30,17 @@ function addToCart(e){
     let url = "/add_to_cart"
 
     let data= {id:menu_id}
-    cons
 
-
-
+    fetch(url, {
+        method: "POST",
+        headers: {"Content-type":"application/json", 'X-CSRRFToken': csrftoken },
+        body: JSON.stringify(data)
+    })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
 }
