@@ -17,8 +17,8 @@
           <li><a class="profile-line" href="{% url 'logout' %}">Logout</a></li>
         {% else %}
           <! -- else if user logsout or dosn't exist than navbar is login and register -->
-          <li><a href="{% url 'login' %}">Login</a></li>
-          <li><a href="{% url 'register' %}">Register</a></li>
+          <li><a class="profile-line" href="{% url 'login' %}">Login</a></li>
+          <li><a class="profile-line" href="{% url 'register' %}">Register</a></li>
 
         {% endif %}
       </ul>

@@ -2,16 +2,12 @@
 
 {% block content %}
 
-    <div class="container">
-        {% for product in menu %}
-            <div class="thumbnail">
-                <img src="{{ menu.image}}" alt="">
-            </div>
-            <div class="action">
-                <p>{{menu.name}}</p>
-                <p>{{menu.price}}</p>
+    <a href="/cart/checkout" class="block btn btn-primary">Checkout</a>
 
-            </div>
+    <div class="carts">
+
+        {% for cart in carts %}
+            {% include 'carts/single_cart.html' with cart=cart %}
         {% endfor %}
     </div>
 {% endblock %}

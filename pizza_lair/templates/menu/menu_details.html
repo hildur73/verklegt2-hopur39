@@ -5,7 +5,7 @@
     <img class="pizza-img-description" src="{{ menu.image }}"/>
   <p class="description">{{menudetails.description}}</p>
   <p class="priced"> {{menu.price}} kr</p>
-  <! -- buttons to update or delete each pizza from the menu, when updateing can change each info about pizza
+  <! -- buttons to update or delete each pizza from the menu, when updating can change each info about pizza
             (not required can change only one certain info)-->
   <a href="/delete_menu/{{menu.id}}" class="block btn btn-primary">Delete pizza</a>
   <a href="/update_menu/{{menu.id}}" class="block btn btn-primary">Update pizza</a>
@@ -14,5 +14,3 @@
 
 {% endblock %}
 
-
-<!--href ="/cart"-->
