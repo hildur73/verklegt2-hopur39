@@ -4,6 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="cbd9a92d-73f0-4a53-a074-ce0f2afca4dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/cart/checkout_site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cart/review_step.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/forms/cart_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/forms/cart_forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/migrations/0002_checkout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/migrations/0003_paymentstep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/migrations/0004_country_alter_checkout_country.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/migrations/0005_alter_paymentstep_expirationdate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/forms/menu_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/forms/menu_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offers/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/offers/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/offers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/add_to_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/add_to_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/menu/menu_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu/menu_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/offers/update_offers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/offers/update_offers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
