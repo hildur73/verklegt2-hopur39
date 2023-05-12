@@ -14,8 +14,7 @@ The code has been divided into the following folders for more simplicity.
 - cart:  Contains the code structure for the shopping cart functionality.
 - menu: Contains the code structure for the pizza menu.
 - offers: Contains the code structure for the special offers
-- pizza_lair: Contains the main application code, including the Flask routes and database models???
-- pizzalair: Contains the configuration files for the Flask application.?????
+- pizza_lair: Contains the main application code, including the database models
 - static: Contains static files such as images, stylesheets, and JavaScript files.
 - template: Contains the HTML templates used to render the web pages.
 - user: Contains the code structure for the user authentication functionality.
@@ -24,7 +23,7 @@ The code has been divided into the following folders for more simplicity.
 - The populationscript.sql for the database
 
 
-The public ID for the database is: 35.228.253.190
+The public ID for the database is: 0.0.0.0/0
 
 To get the website up and running you have to make sure venv package installed.
 Then you can activate the venv, run the program and get the website.
@@ -33,8 +32,8 @@ Before we started this project we wrote down some programming rules.
 Some of the rules that we followed are:
 - Having the variable names and descriptive as possible.
 - We tested the code frequently to prevent major coding errors.
-
-
+- We have comments explaning what is happening.
+- Reusing function for better constructed code.
 
 
 
