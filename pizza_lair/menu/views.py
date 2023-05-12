@@ -8,6 +8,8 @@ from menu.models import Menu, Menudetails
 # Create your views here.
 
 def index(request):
+    """This function provides the main menu. There is also a search filter that
+    returns the pizza that fit the user's search criteria """
     if 'search_filter' in request.GET:
         search_filter = request.GET['search_filter']
         pizzas = [{
@@ -22,6 +24,7 @@ def index(request):
 
 @login_required
 def get_pizza_by_id(request, id):
+    """This function returns the pizza that the user search for by its  id """
     bla = Menu.objects.filter(id=id).first()
     menudetail = Menudetails.objects.filter(menuid_id=bla.id).first()
     return render(request, 'menu/menu_details.html', {
@@ -31,6 +34,7 @@ def get_pizza_by_id(request, id):
 
 @login_required
 def create_menu(request):
+    """This function lets the user add new pizza to the menu by filling out a form. """
     if request.method == 'POST':
         form = MenuCreateForm(data=request.POST)
         if form.is_valid():
@@ -48,12 +52,14 @@ def create_menu(request):
 
 @login_required
 def delete_menu(request, id):
+    """This function allows the user to delete a specific pizza from the menu."""
     menu = get_object_or_404(Menu, pk=id)
     menu.delete()
     return redirect('menu-index')
 
 @login_required
 def update_menu(request, id):
+    """This function allows the user to change and update the information about the pizza by filling out a form."""
     instance = get_object_or_404(Menu, pk=id)
     if request.method == 'POST':
         form = MenuUpdateForm(data=request.POST, instance=instance)

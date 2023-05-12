@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(request):
+    """This function shows the items in the user's cart."""
     cart = Cart.objects.filter(user_id=request.user).first()
     items = CartItem.objects.filter(cartid=cart.id)
     all_pizzas = []
@@ -20,6 +21,7 @@ def index(request):
 
 @login_required
 def add_to_cart(request,item_id):
+    """This function adds the items that the user has selected to the cart"""
     the_cart = None
     my_cart = Cart.objects.filter(user_id=request.user, payment=False)
     if len(my_cart) == 0:
@@ -40,6 +42,7 @@ def add_to_cart(request,item_id):
 
 @login_required
 def checkout(request):
+    """This function displays the checkout form and saves the data"""
     if request.method == 'POST':
         form = CheckOutForm(data=request.POST)
         if form.is_valid():
@@ -54,6 +57,7 @@ def checkout(request):
 
 @login_required
 def payment(request):
+    """Ths function displayes a payment form and saves the data"""
     if request.method == 'POST':
         form = PaymentStepsForm(data=request.POST)
         if form.is_valid():
