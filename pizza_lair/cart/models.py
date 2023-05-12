@@ -9,7 +9,6 @@ class Cart(models.Model):
     payment = models.BooleanField()
 
 
-
 class CartItem(models.Model):
     cartid = models.ForeignKey(Cart, on_delete=models.CASCADE)
     menuid = models.ForeignKey(Menu, on_delete=models.CASCADE)
@@ -21,12 +20,14 @@ class Country(models.Model):
     def __str__(self):
         return self.name
 
+
 class Checkout(models.Model):
     fullname = models.CharField(max_length=255)
     streetname = models.CharField(max_length=255)
     city = models.CharField(max_length=255)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
     postalcode = models.IntegerField()
+
 
 class Paymentstep(models.Model):
     cardholder = models.CharField(max_length=255)
