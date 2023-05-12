@@ -14,7 +14,7 @@ class CartUpdateForm(ModelForm):
 class CheckOutForm(ModelForm):
     class Meta:
         model = Checkout
-        exclude = ['id']
+        exclude = ['id', 'user_id']
         widgets = {
             'fullname': widgets.TextInput(attrs={'class':'form-control'}),
             'streetname': widgets.TextInput(attrs={'class':'form-control'}),
@@ -27,7 +27,7 @@ class CheckOutForm(ModelForm):
 class PaymentStepsForm(ModelForm):
     class Meta:
         model = Paymentstep
-        exclude = ['id']
+        exclude = ['id', 'user_id']
         widgets = {
             'cardholder': widgets.TextInput(attrs={'class': 'form-control'}),
             'cardnumber': widgets.NumberInput(attrs={'class': 'form-control'}),

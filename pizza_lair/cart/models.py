@@ -22,6 +22,7 @@ class Country(models.Model):
         return self.name
 
 class Checkout(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     fullname = models.CharField(max_length=255)
     streetname = models.CharField(max_length=255)
     city = models.CharField(max_length=255)
@@ -29,6 +30,7 @@ class Checkout(models.Model):
     postalcode = models.IntegerField()
 
 class Paymentstep(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     cardholder = models.CharField(max_length=255)
     cardnumber = models.IntegerField()
     expirationdate = models.DateField()

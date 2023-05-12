@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <h4 class="total"> Total Amount: {{ total }} </h4>
 
-    <a href="/cart/checkout" class="block btn btn-primary">Checkout</a>
     {% for pizza in all_pizzas %}
             {% include 'cart/add_to_cart.html' with pizza=pizza %}
-        {% endfor %}
+    {% endfor %}
+     <a href="/cart/checkout" class="block btn btn-primary">Proceed to Checkout</a>
+     <a href="delete_cart" class="block btn btn-primary-c">Clear cart</a>
+
 {% endblock %}

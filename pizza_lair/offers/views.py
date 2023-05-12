@@ -27,10 +27,8 @@ def create_offers(request):
 @login_required
 def get_offer_by_id(request, id):
     bla = Offers.objects.filter(id=id).first()
-    #menudetail = Menudetails.objects.filter(menuid_id=bla.id).first()
     return render(request, 'offers/offer_details.html', {
         'offers': get_object_or_404(Offers, pk=id)
-        #'menudetails': menudetail
     })
 
 
@@ -46,11 +44,13 @@ def update_offers(request, id):
     if request.method == 'POST':
         form = OffersUpdateForm(data=request.POST, instance=instance)
         if form.is_valid():
-            form.save()
-            return redirect('offers', id=id)
+            offers = form.save()
+            return redirect('offers-index')
     else:
         form = OffersUpdateForm(instance=instance)
     return render(request, 'offers/update_offers.html', {
         'form': form,
         'id': id
     })
+
+

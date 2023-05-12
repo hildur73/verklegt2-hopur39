@@ -6,7 +6,7 @@
 }
 
 body{
-  height: 2000px;
+    height: 2000px;
 }
 
 .container{
@@ -50,7 +50,7 @@ body{
  .single_pizza{
      float: left;
      width: 50%;
-    vertical-align: middle;
+     vertical-align: middle;
  }
 
 .pizza-img-description{
@@ -112,12 +112,50 @@ a{
     padding: 7px;
 }
 
-
-.cart-img-description{
-    width: 700px;
-    height: 700px;
+.single_cart{
+    display: flex;
+    align-items: center;
 }
 
-.cartname{
-    color: pink;
+.cart-img-description{
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+    margin-bottom: 3em;
+}
+
+.cart-name, .price-in-cart{
+    order:2;
+    margin-right: 30px;
+}
+
+.total{
+    float: right;
+}
+
+.shipping, .billing{
+    list-style-type: none;
+
+}
+
+.checkout-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.review-text{
+    padding: 30px;
+    width: 100%;
+}
+
+.thankyou{
+    text-align: center;
+    padding: 150px;
+}
+
+.btn-primary-c{
+    float: left;
 }
