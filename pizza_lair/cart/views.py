@@ -12,7 +12,7 @@ def index(request):
     cart = Cart.objects.filter(user_id=request.user)
     CartItem.objects.filter(cartid=cart.id).first()
     context = {'cart': cart}
-    return render(request, 'cart/index.html',context)
+    return render(request, 'cart/index.html', context)
 
 @login_required
 def add_to_cart(request,item_id):
