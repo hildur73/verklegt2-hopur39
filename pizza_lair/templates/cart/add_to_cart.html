@@ -1,9 +1,6 @@
-{% extends 'base.html' %}
-
-{% block content %}
-  <form class="form form-horizontal" action="{% url 'cart' %}" method="post">
-      {% csrf_token %}
-      {{form}}
-      <input href="/cart" type = "submit" value="Update" class="btn btn-primary pull-right" style="clear:both; margin:10px 0"/>
-  </form>
-{% endblock %}
+<! -- the file that the for loop in index.html is iterating through -->
+<div class="single_cart">
+      <h4 class="cartname"> {{ pizza.name }}</h4>
+      <h5 class="price-in-cart"> {{ pizza.price }} kr</h5>
+      <img class="cart-img-description" src="{{ pizza.image }}"/>
+</div>

@@ -6,7 +6,7 @@
 }
 
 body{
-  height: 1500px;
+  height: 2000px;
 }
 
 .container{
@@ -112,3 +112,12 @@ a{
     padding: 7px;
 }
 
+
+.cart-img-description{
+    width: 700px;
+    height: 700px;
+}
+
+.cartname{
+    color: pink;
+}
