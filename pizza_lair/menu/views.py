@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from menu.forms.menu_form import MenuCreateForm, MenuUpdateForm
-from menu.models import Menu, Menudetails
+from menu.models import Menu
 
 
 # Create your views here.
@@ -22,11 +22,9 @@ def index(request):
 
 @login_required
 def get_pizza_by_id(request, id):
-    bla = Menu.objects.filter(id=id).first()
-    menudetail = Menudetails.objects.filter(menuid_id=bla.id).first()
+    menu = Menu.objects.filter(id=id).first()
     return render(request, 'menu/menu_details.html', {
-        'menu': get_object_or_404(Menu, pk=id),
-        'menudetails': menudetail
+        'menu': get_object_or_404(Menu, pk=id)
     })
 
 @login_required
@@ -35,10 +33,6 @@ def create_menu(request):
         form = MenuCreateForm(data=request.POST)
         if form.is_valid():
             menu = form.save()
-            menu_description = Menudetails()
-            menu_description.description = request.POST['description']
-            menu_description.menuid = menu
-            menu_description.save()
             return redirect('menu-index')
     else:
         form = MenuCreateForm()
@@ -59,10 +53,6 @@ def update_menu(request, id):
         form = MenuUpdateForm(data=request.POST, instance=instance)
         if form.is_valid():
             menu = form.save()
-            menu_description = get_object_or_404(Menudetails, pk=id)
-            menu_description.description = request.POST['description']
-            menu_description.menuid = menu
-            menu_description.save()
             return redirect('menu_details', id=id)
     else:
         form = MenuUpdateForm(instance=instance)
