@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<! -- the file that the for loop in index.html is iterating through -->
+<div class="checkout-info">
+      <h2 class="review-text">Review your information</h2>
+
+      <div class="shipping">
+      <h4 class="shipping_address">Shipping address</h4>
+            <li class="fullname">{{ fullname }}</li>
+            <li class="streetname">{{ streetname }}</li>
+            <li class="postalcode">{{ postalcode }}</li>
+            <li class="city">{{ city }}</li>
+      </div>
+
+      <div class="billing">
+      <h4 class="billing_address">Billing address</h4>
+            <li class="cardholder">{{ cardholder }}</li>
+            <li class="cardnumber">{{ cardnumber }}</li>
+            <li class="experitiondate">{{ experitiondate }}</li>
+      </div>
+
+</div>
+      <a href="checkout_site" class="block btn btn-primary">Confirm</a>
+
+{% endblock %}
