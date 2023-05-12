@@ -9,9 +9,13 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(request):
-    cart = Cart.objects.filter(user_id=request.user)
-    CartItem.objects.filter(cartid=cart.id).first()
-    context = {'cart': cart}
+    cart = Cart.objects.filter(user_id=request.user).first()
+    items = CartItem.objects.filter(cartid=cart.id)
+    all_pizzas = []
+    for item in items:
+        menuitem = Menu.objects.filter(cartitem=item.id).first()
+        all_pizzas.append(menuitem)
+    context = {"all_pizzas": all_pizzas}
     return render(request, 'cart/index.html',context)
 
 @login_required

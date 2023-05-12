@@ -8,7 +8,6 @@ from menu.models import Menu, Menudetails
 # Create your views here.
 
 def index(request):
-    #works with a questionmark after /
     if 'search_filter' in request.GET:
         search_filter = request.GET['search_filter']
         pizzas = [{
@@ -60,7 +59,7 @@ def update_menu(request, id):
         form = MenuUpdateForm(data=request.POST, instance=instance)
         if form.is_valid():
             menu = form.save()
-            menu_description = Menudetails()
+            menu_description = get_object_or_404(Menudetails, pk=id)
             menu_description.description = request.POST['description']
             menu_description.menuid = menu
             menu_description.save()
